@@ -134,6 +134,7 @@ export default function Home() {
       console.log('has a fail')
       setTotal({
         ...totals,
+        success: totals.success - 1,
         fail: totals.fail + 1
       })
     }
@@ -151,7 +152,6 @@ export default function Home() {
     setStatus('fetching')
     const response = await getAllCampaigns()
     console.log('await', response)
-
     setStatus('fetched')
 
   }
