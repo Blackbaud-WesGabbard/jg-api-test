@@ -1,0 +1,6 @@
+.next
+dist
+node_modules
+yarn-error.long
+npm-debug.log
+.vscode
